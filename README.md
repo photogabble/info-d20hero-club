@@ -9,3 +9,7 @@
 ## About this repository
 
 This repository contains the source files for the website hosted at <a href="https://info.d20hero.club">info.d20hero.club</a>. Feel free to submit <a href="issues">issues</a> or <a href="pulls">new pull requests</a> if you find issues.
+
+## Install & Build
+
+[info.d20hero.club](https://info.d20hero.club) is a static site generated using [Metalsmith](http://www.metalsmith.io/). To build the website you need to first run `npm install` followed by `npm run build` to build. Metalsmith will build the static site into the `/public` folder.
