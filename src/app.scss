@@ -1,8 +1,11 @@
 @import '../node_modules/normalize.css/normalize.css';
 
+$dark: #444; // #0D0835;  // #040101
+$light: #FFF; // #737AA8; // #D44614
+
 html{
-  background-color: #444;
-  color: #fff;
+  background-color: $dark;  // #444;
+  color: $light; // #fff;
 }
 
 body{
@@ -21,7 +24,7 @@ body{
 nav{
   padding: 3rem 0;
   a{
-    color: #fff;
+    color: $light;
     text-decoration: none;
     font-family: "Arial",sans-serif;
     font-size: 16px;
@@ -40,7 +43,7 @@ main{
   line-height: 2rem;
 
   a{
-    color: #ecaf1e;
+    color: $light;
     border-bottom: 1px solid rgba(255,255,255,0.7);
     text-decoration: none;
   }
