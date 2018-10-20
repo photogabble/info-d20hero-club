@@ -12,9 +12,9 @@
 <body>
     <nav>
         <div class="content-constraint">
-            <a href="/">About</a>
-            <a href="/tos">Terms of Service</a>
-            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/" {{#if page_is_about}}class="current"{{/if}}>About</a>
+            <a href="/tos" {{#if page_is_tos}}class="current"{{/if}}>Code of Conduct and Rules</a>
+            <a href="/privacy-policy" {{#if page_is_privacy}}class="current"{{/if}}>Privacy Policy</a>
         </div>
     </nav>
     <main>
@@ -23,7 +23,12 @@
         </div>
     </main>
     <footer>
-        <p>Hello world</p>
+        <div class="content-constraint">
+            <p>
+                This website content is <a href="https://github.com/photogabble/info-d20hero-club/blob/master/LICENSE">licenced</a> under the MIT License.<br>
+                See an error or would like to contribute to this website? The source is <a href="https://github.com/photogabble/info-d20hero-club">available over on github</a>.
+            </p>
+        </div>
     </footer>
 </body>
 </html>
