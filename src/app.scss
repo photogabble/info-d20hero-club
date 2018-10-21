@@ -56,6 +56,10 @@ main{
     font-size: 1.6rem;
   }
 
+  h1{
+    line-height: 2.8rem;
+  }
+
   h2{
     margin-top: 4rem;
   }
@@ -68,4 +72,47 @@ main{
 footer{
   background-color: #585858;
   padding: 4rem 0;
+}
+
+@media (max-width: 1024px){
+  main{
+    font-size: 1.1rem;
+
+    p:first-of-type {
+      font-size: 1.3rem;
+    }
+  }
+  .content-constraint{
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 760px){
+  nav {
+    padding-bottom: 0;
+    a{
+      margin-right: 0;
+      margin-bottom: 0.3rem;
+      display: inline-block;
+
+      &:after{
+        content: ', ';
+      }
+
+      &.site-name{
+        display:block;
+        width:100%;
+        margin-bottom: 1rem;
+
+        &:after{
+          content: '';
+        }
+      }
+
+      &:last-child:after{
+        content: '.';
+      }
+    }
+  }
 }
